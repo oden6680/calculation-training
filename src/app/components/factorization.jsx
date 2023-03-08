@@ -57,7 +57,7 @@ export const Factorization = () => {
             <Grid item xs={6}>
                 <p style={{fontSize:"3em"}}>【解答】</p>
                 {answerList.map((answer,index) => (
-                    <InlineMath key={question}>
+                    <InlineMath key={answer}>
                         { "\\Huge(" + String(Number(index)+1) + ")" + answer +"\\\\"}
                     </InlineMath>
                 ))}
